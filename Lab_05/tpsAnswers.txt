@@ -1,0 +1,18 @@
+TPS 1
+1) MARS stands for MIPS Assembler and Runtime Simulator
+4) 
+	a) File -> Open
+	b) Click "Assemble the current file..."
+	c) Click "Run the current program"
+	d) No, you have to assemble it first
+	e) Click "Run one step at a time"
+	f) Click "Reset MIPS memory and registers"
+TPS 2
+1) ".data" holds global variables. ".word" stores n 32-bit quantities in successive memory words. ".text" is the code section
+2) Line 10: If $t3 == $t0 then we jump to the finish protocol
+3) Line 15: Jump to the fib protocol
+4) After assembling, mark the "Bkpt" checkboxes next to the assembled code.
+5) Click one of the "Run" options
+6) On the right, find the register and look at its value (using your eyes). To modify it, click on the hex value and change it as desired.
+7) n is stored $t3. 13th fib # is 233
+8) syscall is used to request a service from the kernal using a service number/code.

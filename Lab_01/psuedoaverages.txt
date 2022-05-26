@@ -1,0 +1,34 @@
+averages {
+    char input[100]
+    int avg_even=0, avg_odd=0, count_even=0, count_odd=0
+    bool running = 1
+    while (running) {
+        printf("Please enter the %ith integer: ", count_even + count_odd)
+        scanf("%s", input)
+        if (input=="0")
+            running = 0
+        else {
+            int i=0, sum=0
+            while (input[i] != null) {
+                sum = sum + atoi(input[i])
+                i++
+            }
+            if (sum % 2 == 0) {
+                count_even++
+                avg_even = avg_even + sum
+            } else {
+                count_odd++
+                avg_odd = avg_odd + sum
+            }
+        }
+    }
+    if(count_even+count_odd == 0)
+        printf("There is no average to compute.")
+    else {
+        if(count_even != 0)
+            printf("Average of inputs whose digits sum up to an even number: %d", avg_even/count_even)
+        if(count_odd != 0)
+            printf("Average of inputs whose digits sum up to an odd number: %d", avg_odd/count_odd)
+    }
+    return 0;
+}

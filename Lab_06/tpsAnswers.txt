@@ -1,0 +1,17 @@
+TPS 1
+1) Text Segment: 0x004000000, Data Segment: 0x10010000
+2) There are extra lines of Basic code compared to the source code.
+3) 32 bytes
+4) 8 columns
+5) Each column shows the values of the address plus 4 bytes.
+6) "m:	.word 20"
+7) 0x10010004
+8) "str1: .asciiz "I love CSE31!""
+9) str1 starts at 0x10010008
+10) Yes, it is stored as:
+	|ol I|C ev|31E|\0\0\0!|
+11) 
+	li $v0, 4
+	la $a0, str1
+	syscall
+12) "la $t3, n" loads the address of the label "n" into $t3. After running the line, $t3 will hold "0x10010000".

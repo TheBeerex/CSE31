@@ -1,0 +1,19 @@
+TPS 1
+1. Steven Spangler, Quan Nguyen, Paul Kim
+2-4. https://www.youtube.com/playlist?list=PLS1QulWo1RIb9WVQGJ_vh-RQusbZgO_As
+TPS 2
+1. ctrl + alt + t
+  a. Yes
+  b. To multitask, such as having one with the source code and another to compile and run.
+2. "ls"
+3. "cd Desktop"
+4. "mkdir CSE31"
+TPS 3
+1-2. https://www.geeksforgeeks.org/gcc-command-in-linux-with-examples/ and https://www.cprogramming.com/gcc.html
+3. "gcc main.c"
+4. No compilation errors will have outputted and an output file will have been made.
+5. Compiles the program and gives the object file as output.
+6. -g is used for debugging.
+7. Add the flag "-o cselab1"
+8. It outputs as the default filename, "a.out"
+9. "./a.out"

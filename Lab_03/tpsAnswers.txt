@@ -1,0 +1,13 @@
+TPS 1
+1)  static: global variable storage, permanent for program runtime
+    stack: local variable storage (automatic, continuous memory)
+    heap: dynamic storage (not allocated in contiguous order)
+2)  
+    a) 3 variables
+    b) 2 pointers, int and int *
+    c) On the stack
+    d) On the heap
+TPS 2
+1) It's a linked list.
+2) code
+3) Node is a container like an array, the pointer to a Node object is the same as a pointer to that Node's iValue

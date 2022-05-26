@@ -1,0 +1,21 @@
+TPS 1
+1) 
+	procedure: a series of actions conducted in a certain order or manner.
+	function: a basic task of a computer, especially one that corresponds to a single instruction from the user.
+	method: a particular form of procedure for accomplishing or approaching something, especially a systematic or established one.
+
+4) line 12: j SUM. Jumps to line with label "SUM"
+5) Yes, but it would make the code more difficult to read.
+6) line 11: addi $ra, $zero, 0. Sets $ra to 0. Address value does not make sense.
+7) "Error in : invalid program counter value: 0x00000000"
+8) 0x00400020, or 4194336
+9) Set $ra to 4194336
+10) Now the function's address is different. Set $ra to 4194344 instead.
+11) Use "jal SUM" instead of "j SUM" to jump and set $ra to the correct address.
+
+TPS 2
+1) The output should be 38, and it prints the expected output.
+3) Used jal to store the return address for SUM. The return address in $ra is changed, so SUM won't return properly to MAIN.
+4) Save register to memory temporarily. Then load it when needed.
+5) $s0 is overwritten by a new value. This is a problem.
+

@@ -1,0 +1,83 @@
+---Test 1---
+
+Enter the number of assignments (between 1 and 25): 5
+Enter score: 2
+Enter score: 22
+Enter score: 11
+Enter score: 7
+Enter score: 19
+Original scores: 2 22 11 7 19 
+Sorted scores (in descending order): 22 19 11 7 2 
+Enter the number of (lowest) scores to drop: 2
+Average (rounded up) with dropped scores removed: 18
+
+
+---Test 2---
+
+Enter the number of assignments (between 1 and 25): 6
+Enter score: 23
+Enter score: 44
+Enter score: 22
+Enter score: 1
+Enter score: 18
+Enter score: 33
+Original scores: 23 44 22 1 18 33 
+Sorted scores (in descending order): 44 33 23 22 18 1 
+Enter the number of (lowest) scores to drop: 5
+Average (rounded up) with dropped scores removed: 44
+
+
+---Test 3---
+
+Enter the number of assignments (between 1 and 25): 3
+Enter score: 69
+Enter score: 48
+Enter score: 83
+Original scores: 69 48 83 
+Sorted scores (in descending order): 83 69 48 
+Enter the number of (lowest) scores to drop: 1
+Average (rounded up) with dropped scores removed: 76
+
+
+---Test 4---
+
+Enter the number of assignments (between 1 and 25): 20
+Enter score: 1
+Enter score: 2
+Enter score: 3
+Enter score: 4
+Enter score: 5
+Enter score: 6
+Enter score: 7
+Enter score: 8
+Enter score: 9
+Enter score: 10
+Enter score: 11
+Enter score: 12
+Enter score: 13
+Enter score: 14
+Enter score: 15
+Enter score: 16
+Enter score: 17
+Enter score: 18
+Enter score: 19
+Enter score: 20
+Original scores: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 
+Sorted scores (in descending order): 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 
+Enter the number of (lowest) scores to drop: 0
+Average (rounded up) with dropped scores removed: 11
+
+
+---Test 5---
+
+Enter the number of assignments (between 1 and 25): 6
+Enter score: 11
+Enter score: 22
+Enter score: 33
+Enter score: 44
+Enter score: 55
+Enter score: 66
+Original scores: 11 22 33 44 55 66 
+Sorted scores (in descending order): 66 55 44 33 22 11 
+Enter the number of (lowest) scores to drop: 6
+Average (rounded up) with dropped scores removed: 0

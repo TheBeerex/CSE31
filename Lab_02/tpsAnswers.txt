@@ -1,0 +1,16 @@
+TPS 1
+1) Guru Bahchu, Ari Schwarz
+2) https://www.tutorialspoint.com/gnu_debugger/installing_gdb.htm, https://cs.baylor.edu/~donahoo/tools/gdb/tutorial.html, 
+TPS 2
+1) gcc -g punishment.c -o punish
+2) gdb punish
+3) run
+4) break 28
+5) next
+6) print typo, p i, p lines
+7) continue, c
+8) quit
+TPS 3
+1) 2 variables (x, y), 2 pointers (px, py)
+2) I get whatever values were there before I declared those variables.
+3) Set their values when declaring the variables.

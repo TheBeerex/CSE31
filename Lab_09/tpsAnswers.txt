@@ -1,0 +1,26 @@
+TPS 1
+4) 32 bits
+5) There are three types: R, I, and J formats. Add & And are R formats. Add Immediate & Load Word are I formats. Jump & Jump And Link are J formats.
+6) addi $s0, $zero, 25
+	a) Add Immediate is an I type format and has 3 fields (excluding the opcode): rs, rt, and the immediate.
+	b) opcode: 8(hex). rs: $s0, 10(hex). rt: $zero, 00(hex). immediate: 25, 19(hex).
+	c) binary: 001000 00000 10000 0000000000011001; hex: 0x20100019;
+7) 0x00400010
+	a) hex: 0x0230402a. binary: 000000 10001 10000 01000 00000 101010
+	b) The first 6 digits tell me that its a special instruction, 000000, which means it's an R type with 5 codes (excluding the opcode): rs, rt, rd, shamt, and funct.
+	c) rs: 10001 ($s1). rt: 01000 ($s0). rd: 01000 ($t0). shamt: 00000 (0). funct: 101010 (SLT).
+	d) The last 6 digits provide me with the function code, 101010, which means it's SLT.
+	e) slt $t0, $s1, $s0
+8) bne $t0, $zero, LESS
+	a) I format, 
+	b) opcode: 5(hex), 000101(binary). rs: $t0, 8(hex), 01000(binary). rt: $zero, 0(hex), 000000(binary)
+	c) 0x0040001c
+	d) No, because the address takes more than 16 bits to store.
+	e) We need the offset of the address rather than the full address. In this case it's the last sixteen bits, 001c(hex) or 0000000000011100(binary).
+	f) 000101 01000 00000 0000000000011100(binary), 0x1500001C(hex)
+9) j GREQ
+	a) J format with 1 argument (excluding opcode).
+	b) opcode: 2(hex), 000010(binary).
+	c) GREQ: 0x00400030(hex), 00000000010000000000000000110000(binary)
+	d) 26 bits. Our address for GREQ is 32 bits, so we need to remove the leading six bits of the address' binary value, i.e. 00010000000000000000110000(binary).
+	e) 000010 00010000000000000000110000(binary), 0x08400030(hex).

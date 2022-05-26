@@ -1,0 +1,24 @@
+TPS 1
+1) 2
+2) 2
+3) Outputs 44434241 instead of the expeced value
+4) Outputs 2
+5) 2 arrays to the same locations
+6) In four_ints the difference between each element is 4 bytes.
+7) 
+   four_ints   [11,          7,          3,          0       ]
+                2,           2,          2,          44434241
+8) In four_c the fifference between each element is 1 byte.
+9)
+   four_c  [3,  2,  1,  0 ]
+            44, 43, 42, 41
+10) The first element of four_ints is made up of the elements of four_c
+
+TPS 2
+1) Line 8 allocates memory for 5 int* variables, and sets an int** arr to point to the first element of that allocated space.
+2) *(arr+i)
+3) Code
+4) The size might not be what we expect, it could be less than or greater than our size 5.
+5) Code
+6) Code
+7) Code, properly verified

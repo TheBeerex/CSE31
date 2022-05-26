@@ -1,0 +1,11 @@
+Assignment 1
+1) 18   scanf("%d", input);
+2) 18   scanf("%d", &input);
+3) sum remains 0 after read_values is called
+4) pass sum by reference and remove line 12
+
+Assignment 2
+1) Output should be HELLO!hello! but is HELLO!hello!llo!
+2) Output should be HI!hi! but is HI!hi!hellhi!
+    Fixed by initiallizing the strings as empty strings and checking if s2[k] == 0 in order to not add unexpected characters
+3) For some reason, a chunk of str1 is overwritten by str2, while str2 is still saved as str2, which causes it to append str2 to the back of the already unexpected str1.
